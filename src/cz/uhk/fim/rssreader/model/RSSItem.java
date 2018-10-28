@@ -60,4 +60,15 @@ public class RSSItem {
         this.author = author;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "<html><h3>" + title + "</h3>" +
+                "<a href='#'>"+link+"</a><br>" +
+                "<p>" + description + "</p>" +
+                "<p>" + pudDate + "</p><br>" +
+                "<b>" + author + "</b><html>";
+    }
+
+
 }
