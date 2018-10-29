@@ -1,6 +1,7 @@
 package cz.uhk.fim.rssreader.gui;
 
 
+import cz.uhk.fim.rssreader.model.RSSItem;
 import cz.uhk.fim.rssreader.model.RssList;
 import cz.uhk.fim.rssreader.utils.FileUtils;
 import cz.uhk.fim.rssreader.utils.RssParser;
@@ -23,7 +24,7 @@ public class MainFrame extends JFrame {
     private JButton btnSave;
     private JButton btnLoad;
     private JTextField searchField;
-    JTextPane rssField ;
+    JTextPane rssField;
 
     private JLabel lblError;
     private RssList rssList;
@@ -60,16 +61,21 @@ public class MainFrame extends JFrame {
         add(panel, BorderLayout.NORTH);
         add(new JScrollPane(rssField), BorderLayout.CENTER);
 
-        rssField.addHyperlinkListener(new HyperlinkListener() {
-            @Override
-            public void hyperlinkUpdate(HyperlinkEvent e) {
-                if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-                }
-                System.out.println(e);
-            }
-        });
+        JPanel content = new JPanel(new WrapLayout());
 
-        btnLoad.addMouseListener(new MouseAdapter() {
+        try {
+            rssList = new RssParser().getParsedRSS("rss.xml");
+
+            for (RSSItem item : rssList.getAll()) {
+                content.add(new CardVIew(item));
+
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        add(new JScrollPane(content),BorderLayout.CENTER);
+
+      /*  btnLoad.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent m) {
                 if (validateInput()) {
@@ -86,7 +92,7 @@ public class MainFrame extends JFrame {
                     } catch (IOException e) {
                         lblError.setText("Špatný název!");
                         lblError.setVisible(true);
-                    }*/
+                    }
 
                 }
 
@@ -96,11 +102,17 @@ public class MainFrame extends JFrame {
             @Override
             public void mouseReleased(MouseEvent e) {
                 if (validateInput()) {
-                    rssList = new RssParser().getParsedRSS(rssField.getText());
-                    rssField.setText("");
+                    try {
+                        rssList = new RssParser().getParsedRSS(rssField.getText());
+                        rssField.setText("");
+                    } catch (Exception e1) {
+                        lblError.setText("Něco se pokazilo :'(");
+                        lblError.setVisible(true);
+                    }
+
                 }
             }
-        });
+        });*/
 
     }
 

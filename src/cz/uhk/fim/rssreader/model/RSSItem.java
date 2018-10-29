@@ -64,10 +64,10 @@ public class RSSItem {
     @Override
     public String toString() {
         return "<html><h3>" + title + "</h3>" +
-                "<a href='#'>"+link+"</a><br>" +
+                "<a href='"+link+"'>"+link+"</a><br>" +
                 "<p>" + description + "</p>" +
                 "<p>" + pudDate + "</p><br>" +
-                "<b>" + author + "</b><html>";
+                "<b>" + (author!=null?author:"") + "</b><html>";
     }
 
 
