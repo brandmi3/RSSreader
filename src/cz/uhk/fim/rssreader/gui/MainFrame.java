@@ -37,7 +37,7 @@ public class MainFrame extends JFrame {
     private void init() {
         setTitle("RSS reader");
         setSize(800, 600);
-        setResizable(false);
+       // setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -68,52 +68,11 @@ public class MainFrame extends JFrame {
 
             for (RSSItem item : rssList.getAll()) {
                 content.add(new CardVIew(item));
-
             }
         } catch (Exception e) {
             System.out.println(e);
         }
         add(new JScrollPane(content),BorderLayout.CENTER);
-
-      /*  btnLoad.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent m) {
-                if (validateInput()) {
-                    rssField.setText("");
-//                        rssField.setText(FileUtils.loadStringFromFile(searchField.getText()));
-                    rssList = new RssParser().getParsedRSS(searchField.getText());
-                    String output = "";
-                    for (int i = 0; i < rssList.getAll().size(); i++) {
-                        output += rssList.getItem(i).toString() + "\n";
-                    }
-                    rssField.setText(output);
-                    /*try {
-
-                    } catch (IOException e) {
-                        lblError.setText("Špatný název!");
-                        lblError.setVisible(true);
-                    }
-
-                }
-
-            }
-        });
-        btnSave.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseReleased(MouseEvent e) {
-                if (validateInput()) {
-                    try {
-                        rssList = new RssParser().getParsedRSS(rssField.getText());
-                        rssField.setText("");
-                    } catch (Exception e1) {
-                        lblError.setText("Něco se pokazilo :'(");
-                        lblError.setVisible(true);
-                    }
-
-                }
-            }
-        });*/
-
     }
 
     private boolean validateInput() {

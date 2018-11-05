@@ -24,7 +24,6 @@ public class RssParser {
         SAXParser parser = factory.newSAXParser();
 
         parser.parse(new File(source), itemHandler);
-
     }
 
     public RssList getParsedRSS(String source) {
