@@ -14,7 +14,7 @@ public class CardVIew extends JPanel {
     private static final int ITEM_WIDTH = 180;
     private static final int COMPONENT_WIDTH = 160;
     private static final int HEIGHT = 1;
-    private static final int DESCRIPTION_LENGTH = 20;
+    private static final int DESCRIPTION_LENGTH = 120;
 
     final String startTag = "<html><p style='width: " + COMPONENT_WIDTH + " px'>";
     final String endTag = "</p></html>";
@@ -25,7 +25,7 @@ public class CardVIew extends JPanel {
         setSize(ITEM_WIDTH, HEIGHT);
         setTitle(item.getTitle());
         setDescription(item.getDescription());
-        setBackground(new Color(0xffffff - (item.getDescription().length() + item.getTitle().length()) * 1000));//todo omezit
+        setBackground(new Color(0xffffff - (item.getDescription().length() + item.getTitle().length()) * 9000));
         setAdditionalInfo(String.format("%s - %s", item.getAuthor(), item.getPudDate()));
         addMouseListener(new MouseAdapter() {
             @Override
@@ -67,6 +67,7 @@ public class CardVIew extends JPanel {
     }
 
     private void setAdditionalInfo(String s) {
+        s = s!=null?s:"";
         JLabel lblInfo = new JLabel(s);
         lblInfo.setSize(COMPONENT_WIDTH, HEIGHT);
         lblInfo.setFont(new Font("Courier", Font.PLAIN, 16));
