@@ -26,7 +26,7 @@ public class CardVIew extends JPanel {
         setTitle(item.getTitle());
         setDescription(item.getDescription());
         setBackground(new Color(0xffffff - (item.getDescription().length() + item.getTitle().length()) * 9000));
-        setAdditionalInfo(String.format("%s - %s", item.getAuthor(), item.getPudDate()));
+        setAdditionalInfo(String.format("%s - %s", item.getAuthor()!=null?item.getAuthor():"", item.getPudDate()));
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
