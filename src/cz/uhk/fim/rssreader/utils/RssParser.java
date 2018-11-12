@@ -1,6 +1,7 @@
 package cz.uhk.fim.rssreader.utils;
 
 import cz.uhk.fim.rssreader.model.RssList;
+import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
 import javax.swing.plaf.basic.BasicComboBoxUI;
@@ -9,6 +10,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 public class RssParser {
     private RssList rssList;
@@ -23,7 +25,8 @@ public class RssParser {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
 
-        parser.parse(new File(source), itemHandler);
+        parser.parse(new InputSource(new URL(source).openStream()), itemHandler);
+// todo       parser.parse(new File(source), itemHandler);
     }
 
     public RssList getParsedRSS(String source) {

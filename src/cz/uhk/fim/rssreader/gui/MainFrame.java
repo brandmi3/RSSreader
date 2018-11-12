@@ -2,6 +2,7 @@ package cz.uhk.fim.rssreader.gui;
 
 
 import cz.uhk.fim.rssreader.model.RSSItem;
+import cz.uhk.fim.rssreader.model.RSSSource;
 import cz.uhk.fim.rssreader.model.RssList;
 import cz.uhk.fim.rssreader.utils.FileUtils;
 import cz.uhk.fim.rssreader.utils.RssParser;
@@ -10,9 +11,13 @@ import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainFrame extends JFrame {
 
@@ -37,7 +42,7 @@ public class MainFrame extends JFrame {
     private void init() {
         setTitle("RSS reader");
         setSize(800, 600);
-       // setResizable(false);
+        // setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -64,7 +69,8 @@ public class MainFrame extends JFrame {
         JPanel content = new JPanel(new WrapLayout());
 
         try {
-            rssList = new RssParser().getParsedRSS("rss.xml");
+            rssList = new RssParser().getParsedRSS("https://www.zive.cz/rss/sc-47");
+//            rssList = new RssParser().getParsedRSS("rss.xml");
 
             for (RSSItem item : rssList.getAll()) {
                 content.add(new CardVIew(item));
@@ -72,7 +78,27 @@ public class MainFrame extends JFrame {
         } catch (Exception e) {
             System.out.println(e);
         }
-        add(new JScrollPane(content),BorderLayout.CENTER);
+        add(new JScrollPane(content), BorderLayout.CENTER);
+        btnLoad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                List<RSSSource> sources = FileUtils.loadSource();
+                for (RSSSource source : sources) {
+                    System.out.println(source.getName() + " " + source.getSource());
+                }
+            }
+        });
+        btnSave.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                List<RSSSource> source = new ArrayList<>();
+                source.add(new RSSSource("živě.cz", "123"));
+                source.add(new RSSSource("živě2.cz", "1"));
+                source.add(new RSSSource("živě3.cz", "2"));
+                source.add(new RSSSource("živě4.cz", "3"));
+                FileUtils.saveSource(source);
+            }
+        });
     }
 
     private boolean validateInput() {
