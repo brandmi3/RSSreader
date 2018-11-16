@@ -28,4 +28,9 @@ public class RSSSource {
         this.source = source;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
