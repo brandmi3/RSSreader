@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3565e30b-9799-4200-b39a-675bd6566563" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/config.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/DetailWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/DetailWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/utils/RssParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/utils/RssParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +36,7 @@
       <file leaf-file-name="RSSItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="904">
+            <state relative-caret-position="1003">
               <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
               <folding>
                 <element signature="e#446#447#0" expanded="true" />
@@ -52,7 +49,7 @@
       <file leaf-file-name="RssParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="561">
               <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,8 +70,8 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+            <state relative-caret-position="125">
+              <caret line="59" column="140" selection-start-line="59" selection-start-column="140" selection-end-line="60" selection-end-column="67" />
               <folding>
                 <element signature="e#1023#1024#0" expanded="true" />
                 <element signature="e#1045#1046#0" expanded="true" />
@@ -371,7 +368,7 @@
       <workItem from="1542370020426" duration="4473000" />
       <workItem from="1542441946736" duration="2723000" />
       <workItem from="1542534759091" duration="7683000" />
-      <workItem from="1542564886451" duration="3252000" />
+      <workItem from="1542564886451" duration="4160000" />
     </task>
     <task id="LOCAL-00001" summary="first commint">
       <created>1538998181061</created>
@@ -419,7 +416,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58296000" />
+    <option name="totallyTimeSpent" value="59204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -445,7 +442,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.6187364" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33114034" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.33006537" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
@@ -513,18 +510,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java</url>
-          <line>127</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java</url>
-          <line>144</line>
+          <line>149</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -921,27 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-          <folding>
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/app/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -956,10 +932,31 @@
     <entry file="file://$PROJECT_DIR$/config.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+        <state relative-caret-position="125">
+          <caret line="59" column="140" selection-start-line="59" selection-start-column="140" selection-end-line="60" selection-end-column="67" />
           <folding>
             <element signature="e#1023#1024#0" expanded="true" />
             <element signature="e#1045#1046#0" expanded="true" />

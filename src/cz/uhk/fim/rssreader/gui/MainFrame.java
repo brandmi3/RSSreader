@@ -11,6 +11,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,8 +57,7 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        ImageIcon img = new ImageIcon("C:\\Users\\brandmi\\IdeaProjects\\RSSreader\\src\\cz\\uhk\\fim\\rssreader\\resource\\icon.png"); //todo
-        setIconImage(img.getImage());
+//        ImageIcon img = new ImageIcon("C:\\Users\\brandmi\\IdeaProjects\\RSSreader\\src\\cz\\uhk\\fim\\rssreader\\resource\\icon.png"); //todo
 
         //init polozek
         panel = new JPanel(new BorderLayout());
