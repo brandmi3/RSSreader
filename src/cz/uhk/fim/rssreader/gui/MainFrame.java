@@ -10,6 +10,7 @@ import cz.uhk.fim.rssreader.utils.RssParser;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,8 @@ public class MainFrame extends JFrame {
 
     private JLabel lblError;
     private RssList rssList;
-
+    private RSSSource rssSource;
+    private List<RSSSource> rssSources;
 
     public MainFrame() {
         init();
@@ -65,7 +67,6 @@ public class MainFrame extends JFrame {
         btnDelete = new JButton("Delete");
         searchField = new JComboBox();
         content = new JPanel(new WrapLayout());
-        loadLinks();
 
         rssField = new JTextPane();
         rssField.setContentType("text/html");
@@ -73,43 +74,66 @@ public class MainFrame extends JFrame {
         lblError.setForeground(Color.RED);
         lblError.setHorizontalAlignment(SwingConstants.CENTER);
         lblError.setVisible(false);
-        new DetailWindow();
+
         btnPanel.add(btnAdd);
         btnPanel.add(btnEdit);
         btnPanel.add(btnDelete);
 
+        panel.add(lblError, BorderLayout.NORTH);
         panel.add(searchField, BorderLayout.CENTER);
         panel.add(btnPanel, BorderLayout.SOUTH);
 
+        loadLinks();
         add(panel, BorderLayout.NORTH);
         add(new JScrollPane(rssField), BorderLayout.CENTER);
 
 
         add(new JScrollPane(content), BorderLayout.CENTER);
 
+
         searchField.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
                     changeContent(((RSSSource) e.getItem()).getSource());
+                    rssSource = ((RSSSource) e.getItem());
                 }
             }
         });
         btnDelete.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                rssSources.remove(rssSource);
+                FileUtils.saveSource(rssSources);
                 loadLinks();
             }
         });
         btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                List<RSSSource> source = new ArrayList<>();
-                source.add(new RSSSource("živě.cz", "123"));
-                source.add(new RSSSource("živě2.cz", "1"));
-                source.add(new RSSSource("živě3.cz", "2"));
-                source.add(new RSSSource("živě4.cz", "3"));
-                FileUtils.saveSource(source);
+                DetailWindow detailWindow = new DetailWindow(rssSources);
+                detailWindow.addWindowListener(new WindowAdapter() {
+                    @Override
+                    public void windowClosed(WindowEvent e) {
+                        loadLinks();
+                    }
+
+                });
+            }
+        });
+        btnEdit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (rssSource != null) {
+                    DetailWindow detailWindow = new DetailWindow(rssSources, rssSources.indexOf(rssSource));
+                    detailWindow.addWindowListener(new WindowAdapter() {
+                        @Override
+                        public void windowClosed(WindowEvent e) {
+                            loadLinks();
+                        }
+
+                    });
+                }
             }
         });
     }
@@ -125,23 +149,25 @@ public class MainFrame extends JFrame {
                     content.add(new CardVIew(item));
                 }
                 content.revalidate();
+                lblError.setVisible(false);
             } catch (Exception e) {
-                System.out.println(e);
+                showErrorMessage(IO_LOAD_TYPE);
             }
     }
 
     private void loadLinks() {
-        List<RSSSource> sources = FileUtils.loadSource();
+        rssSources = FileUtils.loadSource();
         searchField.removeAllItems();
 
-        for (RSSSource source : sources) {
+        for (RSSSource source : rssSources) {
             searchField.addItem(source);
         }
 
-        if (sources.size() > 0) {
-            changeContent(sources.get(0).getSource());
+        if (rssSources.size() > 0) {
+            changeContent(rssSources.get(0).getSource());
+            rssSource = rssSources.get(0);
         } else {
-            changeContent("");
+            content.removeAll();
         }
     }
 

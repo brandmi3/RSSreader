@@ -10,6 +10,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class RssParser {
@@ -21,20 +22,21 @@ public class RssParser {
         this.itemHandler = new ItemHandler(rssList);
     }
 
-    private void parse(String source) throws ParserConfigurationException, SAXException, IOException {
+    private void parse(String source) throws ParserConfigurationException, SAXException, IOException, MalformedURLException {
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
 
-        parser.parse(new InputSource(new URL(source).openStream()), itemHandler);
-// todo       parser.parse(new File(source), itemHandler);
+        if (source.contains("http")) {
+            parser.parse(new InputSource(new URL(source).openStream()), itemHandler);
+        } else {
+            parser.parse(new File(source), itemHandler);
+        }
+
     }
 
-    public RssList getParsedRSS(String source) {
-        try {
-            parse(source);
-        } catch (ParserConfigurationException | SAXException | IOException e) {
-            e.printStackTrace();
-        }
+    public RssList getParsedRSS(String source) throws ParserConfigurationException, SAXException, IOException {
+        parse(source);
+
         return rssList;
     }
 }
