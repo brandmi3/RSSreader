@@ -147,6 +147,7 @@ public class MainFrame extends JFrame {
                 content.removeAll();
                 for (RSSItem item : rssList.getAll()) {
                     content.add(new CardVIew(item));
+                    System.out.println(item.getPudDate());
                 }
                 content.revalidate();
                 lblError.setVisible(false);

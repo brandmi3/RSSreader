@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3565e30b-9799-4200-b39a-675bd6566563" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/config.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/gui/MainFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/utils/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RSSreader/cz/uhk/fim/rssreader/utils/FileUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +21,7 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/app/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="153">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -36,7 +34,7 @@
       <file leaf-file-name="RSSItem.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
+            <state relative-caret-position="969">
               <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
               <folding>
                 <element signature="e#446#447#0" expanded="true" />
@@ -49,11 +47,38 @@
       <file leaf-file-name="RssParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="170">
+              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/ItemHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardVIew.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/CardVIew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WrapLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/WrapLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -61,8 +86,8 @@
       <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="136">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -70,15 +95,13 @@
       <file leaf-file-name="MainFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="59" column="140" selection-start-line="59" selection-start-column="140" selection-end-line="60" selection-end-column="67" />
+            <state relative-caret-position="202">
+              <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
               <folding>
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#4234#4424#0" expanded="true" />
-                <element signature="e#4423#4424#0" expanded="true" />
-                <element signature="e#4791#5002#0" expanded="true" />
-                <element signature="e#5001#5002#0" expanded="true" />
+                <element signature="e#4268#4459#0" expanded="true" />
+                <element signature="e#4458#4459#0" expanded="true" />
+                <element signature="e#4825#5036#0" expanded="true" />
+                <element signature="e#5035#5036#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,44 +109,21 @@
       </file>
       <file leaf-file-name="config.cfg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.cfg">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="DetailWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1615">
+            <state relative-caret-position="1462">
               <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2236#2857#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DetailView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RSSSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#270#271#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,9 +152,10 @@
       <find>HEIGHT</find>
       <find>Colo</find>
       <find>con</find>
-      <find>rssSources</find>
       <find>1</find>
       <find>lblError</find>
+      <find>rssSources</find>
+      <find>searchField</find>
     </findStrings>
     <replaceStrings>
       <replace>btnLoad</replace>
@@ -179,11 +180,11 @@
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailView.java" />
         <option value="$PROJECT_DIR$/rss.xml" />
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/CardVIew.java" />
-        <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSSource.java" />
         <option value="$PROJECT_DIR$/config.cfg" />
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailWindow.java" />
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java" />
+        <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java" />
       </list>
     </option>
@@ -259,8 +260,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,7 +369,18 @@
       <workItem from="1542370020426" duration="4473000" />
       <workItem from="1542441946736" duration="2723000" />
       <workItem from="1542534759091" duration="7683000" />
-      <workItem from="1542564886451" duration="4160000" />
+      <workItem from="1542564886451" duration="5014000" />
+      <workItem from="1542612202604" duration="145000" />
+      <workItem from="1542627210929" duration="1143000" />
+      <workItem from="1543138817170" duration="1198000" />
+      <workItem from="1543222680768" duration="16000" />
+      <workItem from="1543232501771" duration="2429000" />
+      <workItem from="1543607748232" duration="19000" />
+      <workItem from="1543954251094" duration="1261000" />
+      <workItem from="1544028042049" duration="219000" />
+      <workItem from="1544257670482" duration="621000" />
+      <workItem from="1544261115932" duration="2809000" />
+      <workItem from="1544292626997" duration="984000" />
     </task>
     <task id="LOCAL-00001" summary="first commint">
       <created>1538998181061</created>
@@ -416,7 +428,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59204000" />
+    <option name="totallyTimeSpent" value="70902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -440,14 +452,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.6187364" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.6187364" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.28540304" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.33006537" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -459,33 +470,34 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
@@ -498,6 +510,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
     <MESSAGE value="first commint" />
     <MESSAGE value="nacita RSS feed jako string" />
     <MESSAGE value="pridani listeneru na btn a validace" />
@@ -510,7 +523,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java</url>
-          <line>132</line>
+          <line>127</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
@@ -518,10 +531,10 @@
           <url>file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java</url>
           <line>149</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -833,23 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/ItemHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/WrapLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rss.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -858,38 +854,17 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/StringBuilder.java" />
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/CardVIew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="53" selection-start-line="29" selection-start-column="25" selection-end-line="31" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1106#1489#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
+        <state relative-caret-position="1904">
           <caret line="138" column="69" selection-start-line="138" selection-start-column="69" selection-end-line="138" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -900,9 +875,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/WrapLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/DetailWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
+        <state relative-caret-position="1462">
           <caret line="95" column="13" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -913,14 +906,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="136">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/app/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="153">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -929,41 +929,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/model/RSSItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-          <folding>
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/RssParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="170">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/CardVIew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/utils/ItemHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cz/uhk/fim/rssreader/gui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="59" column="140" selection-start-line="59" selection-start-column="140" selection-end-line="60" selection-end-column="67" />
+        <state relative-caret-position="202">
+          <caret line="96" column="34" selection-start-line="96" selection-start-column="34" selection-end-line="96" selection-end-column="34" />
           <folding>
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#4234#4424#0" expanded="true" />
-            <element signature="e#4423#4424#0" expanded="true" />
-            <element signature="e#4791#5002#0" expanded="true" />
-            <element signature="e#5001#5002#0" expanded="true" />
+            <element signature="e#4268#4459#0" expanded="true" />
+            <element signature="e#4458#4459#0" expanded="true" />
+            <element signature="e#4825#5036#0" expanded="true" />
+            <element signature="e#5035#5036#0" expanded="true" />
           </folding>
         </state>
       </provider>

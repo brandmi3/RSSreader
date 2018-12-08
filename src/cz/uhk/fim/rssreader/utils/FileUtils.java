@@ -19,11 +19,6 @@ public class FileUtils {
         return new String(Files.readAllBytes(Paths.get(filepath)));
     }
 
-    public static void saveStringToFile(String filePath, byte[] data) throws IOException {
-        Path path = Paths.get(filePath);
-        Files.write(path, data);
-    }
-
     public static List<RSSSource> loadSource() {
         List<RSSSource> sources = new ArrayList<>();
 
@@ -39,6 +34,11 @@ public class FileUtils {
         }
 
         return sources;
+    }
+
+    public static void saveStringToFile(String filePath, byte[] data) throws IOException {
+        Path path = Paths.get(filePath);
+        Files.write(path, data);
     }
 
     public static void saveSource(List<RSSSource> source) {
