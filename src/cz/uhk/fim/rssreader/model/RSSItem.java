@@ -3,6 +3,7 @@ package cz.uhk.fim.rssreader.model;
 public class RSSItem {
 
     private String title, link, description, pudDate, author;
+    private boolean seen;
 
     public RSSItem() {
 
@@ -14,6 +15,7 @@ public class RSSItem {
         this.description = description;
         this.pudDate = pudDate;
         this.author = author;
+        this.seen = false;
     }
 
     public String getTitle() {
@@ -61,13 +63,22 @@ public class RSSItem {
         return this;
     }
 
+    public boolean isSeen() {
+        return seen;
+    }
+
+    public RSSItem setSeen(boolean seen) {
+        this.seen = seen;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "<html><h3>" + title + "</h3>" +
-                "<a href='"+link+"'>"+link+"</a><br>" +
+                "<a href='" + link + "'>" + link + "</a><br>" +
                 "<p>" + description + "</p>" +
                 "<p>" + pudDate + "</p><br>" +
-                "<b>" + (author!=null?author:"") + "</b><html>";
+                "<b>" + (author != null ? author : "") + "</b><html>";
     }
 
 

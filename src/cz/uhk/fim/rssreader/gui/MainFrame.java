@@ -26,7 +26,7 @@ public class MainFrame extends JFrame {
     private JButton btnAdd;
     private JButton btnEdit;
     private JButton btnDelete;
-    private JComboBox searchField;
+    public JComboBox searchField;
     private JPanel content;
     private JTextPane rssField;
 
@@ -95,8 +95,9 @@ public class MainFrame extends JFrame {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
-                    changeContent(((RSSSource) e.getItem()).getSource());
+                    loadRssItems(((RSSSource) e.getItem()).getSource());
                     rssSource = ((RSSSource) e.getItem());
+                    System.out.println("____");
                 }
             }
         });
@@ -138,22 +139,28 @@ public class MainFrame extends JFrame {
         });
     }
 
-    private void changeContent(String url) {
+    private void loadRssItems(String url) {
         System.out.println(url);
         if (url != null)
             try {
                 rssList = new RssParser().getParsedRSS(url);
 //            rssList = new RssParser().getParsedRSS("rss.xml");
-                content.removeAll();
-                for (RSSItem item : rssList.getAll()) {
-                    content.add(new CardVIew(item));
-                    System.out.println(item.getPudDate());
-                }
-                content.revalidate();
-                lblError.setVisible(false);
+                changeContent();
             } catch (Exception e) {
                 showErrorMessage(IO_LOAD_TYPE);
             }
+    }
+
+    public void changeContent() {
+        content.removeAll();
+        for (RSSItem item : rssList.getAll()) {
+            if (!item.isSeen())
+                content.add(new CardVIew(item, this));
+            System.out.println(item.getPudDate());
+            repaint();
+        }
+        content.revalidate();
+        lblError.setVisible(false);
     }
 
     private void loadLinks() {
@@ -165,7 +172,7 @@ public class MainFrame extends JFrame {
         }
 
         if (rssSources.size() > 0) {
-            changeContent(rssSources.get(0).getSource());
+            loadRssItems(rssSources.get(0).getSource());
             rssSource = rssSources.get(0);
         } else {
             content.removeAll();
@@ -199,5 +206,14 @@ public class MainFrame extends JFrame {
         }
         lblError.setText(msg);
         lblError.setVisible(true);
+    }
+
+    public JComboBox getSearchField() {
+        return searchField;
+    }
+
+    public MainFrame setSearchField(JComboBox searchField) {
+        this.searchField = searchField;
+        return this;
     }
 }

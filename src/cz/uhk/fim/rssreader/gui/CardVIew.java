@@ -4,10 +4,9 @@ import cz.uhk.fim.rssreader.model.RSSItem;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class CardVIew extends JPanel {
 
@@ -20,13 +19,23 @@ public class CardVIew extends JPanel {
     final String endTag = "</p></html>";
     private static DetailView detailView;
 
-    public CardVIew(RSSItem item) {
+    public CardVIew(RSSItem item, MainFrame mainFrame) {
         setLayout(new WrapLayout());
         setSize(ITEM_WIDTH, HEIGHT);
         setTitle(item.getTitle());
         setDescription(item.getDescription());
         setBackground(new Color(0xffffff - (item.getDescription().length() + item.getTitle().length()) * 9000));
-        setAdditionalInfo(String.format("%s - %s", item.getAuthor()!=null?item.getAuthor():"", item.getPudDate()));
+        setAdditionalInfo(item.getAuthor() != null ? item.getAuthor() : "", item.getPudDate());
+        JButton btn_preceteno = new JButton("Přečteno");
+        add(btn_preceteno);
+        btn_preceteno.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                item.setSeen(true);
+                System.out.println(item);
+                mainFrame.changeContent();
+            }
+        });
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseReleased(MouseEvent e) {
@@ -40,9 +49,7 @@ public class CardVIew extends JPanel {
         });
     }
 
-    private int computeColor(String s) {
-        return 0;
-    }
+
 
     private void setTitle(String s) {
         JLabel lblTitle = new JLabel(s);
@@ -66,13 +73,21 @@ public class CardVIew extends JPanel {
         return s.substring(0, DESCRIPTION_LENGTH) + " ...";
     }
 
-    private void setAdditionalInfo(String s) {
-        s = s!=null?s:"";
-        JLabel lblInfo = new JLabel(s);
+    private void setAdditionalInfo(String a,String d) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        a = a != null ? a : "";
+        String out = a;
+        try{
+             String date = dateFormat.format(new Date (d));
+             out += "\n"+ date;
+        }catch (Exception e){
+            System.out.println("chyba při editaci datumu.");
+        }
+        JLabel lblInfo = new JLabel(out);
         lblInfo.setSize(COMPONENT_WIDTH, HEIGHT);
         lblInfo.setFont(new Font("Courier", Font.PLAIN, 16));
         lblInfo.setForeground(Color.LIGHT_GRAY);
-        lblInfo.setText(String.format("%s%s%s", startTag, s, endTag));
+        lblInfo.setText(String.format("%s%s%s", startTag, out, endTag));
         add(lblInfo);
     }
 
