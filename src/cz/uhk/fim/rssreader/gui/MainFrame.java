@@ -97,7 +97,6 @@ public class MainFrame extends JFrame {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
                     loadRssItems(((RSSSource) e.getItem()).getSource());
                     rssSource = ((RSSSource) e.getItem());
-                    System.out.println("____");
                 }
             }
         });
@@ -140,7 +139,6 @@ public class MainFrame extends JFrame {
     }
 
     private void loadRssItems(String url) {
-        System.out.println(url);
         if (url != null)
             try {
                 rssList = new RssParser().getParsedRSS(url);
@@ -156,7 +154,6 @@ public class MainFrame extends JFrame {
         for (RSSItem item : rssList.getAll()) {
             if (!item.isSeen())
                 content.add(new CardVIew(item, this));
-            System.out.println(item.getPudDate());
             repaint();
         }
         content.revalidate();

@@ -86,7 +86,7 @@ public class CardVIew extends JPanel {
         JLabel lblInfo = new JLabel(out);
         lblInfo.setSize(COMPONENT_WIDTH, HEIGHT);
         lblInfo.setFont(new Font("Courier", Font.PLAIN, 16));
-        lblInfo.setForeground(Color.LIGHT_GRAY);
+        lblInfo.setForeground(Color.DARK_GRAY);
         lblInfo.setText(String.format("%s%s%s", startTag, out, endTag));
         add(lblInfo);
     }
