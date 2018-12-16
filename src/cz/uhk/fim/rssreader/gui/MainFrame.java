@@ -57,6 +57,7 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
+
 //        ImageIcon img = new ImageIcon("C:\\Users\\brandmi\\IdeaProjects\\RSSreader\\src\\cz\\uhk\\fim\\rssreader\\resource\\icon.png"); //todo
 
         //init polozek
